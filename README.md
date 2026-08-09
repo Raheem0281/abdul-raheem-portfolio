@@ -1,6 +1,6 @@
 # Abdul Raheem Portfolio
 
-Next.js + Tailwind CSS portfolio website.
+Modern personal portfolio website built with Next.js and Tailwind CSS.
 
 ## Run locally
 
@@ -9,11 +9,35 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000
+Open `http://localhost:3000`
 
-## Edit details
+## Project Structure
 
 - Main content: `app/page.js`
 - Styles: `app/globals.css`
-- WhatsApp link: replace `923000000000` with your real number.
-- Add project screenshots later in `public/` and show them in project cards.
+- Configuration: `tailwind.config.js`
+- Next.js configuration: `next.config.mjs`
+
+## Features
+
+- Responsive portfolio design
+- Full Stack Developer profile
+- Skills showcase
+- Project showcase
+- Certifications section
+- GitHub, LinkedIn, Email and WhatsApp contact links
+- Contact form using Formspree
+- Mobile responsive navigation
+- AI-powered project showcase
+
+## Technologies
+
+- Next.js
+- React
+- JavaScript
+- TypeScript
+- Tailwind CSS
+- Node.js
+- MongoDB
+- MySQL
+- Google Gemini API

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Raheem | Portfolio</title>
+  <meta name="description" content="Abdul Raheem's Personal Portfolio - BS Software Engineering student passionate about web and app development.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link href="output.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="Assets/Personal-Portfolio.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Satoshi', sans-serif;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+    @keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+  </style>
+</head>
+
+<body class="bg-[#0E0E0E] text-[#EAEAEA] font-[Inter]">
+
+  <!-- Navbar -->
+    <nav class="flex items-center justify-between flex-wrap px-8 py-4 border-b border-[#565656]">
+      <div class="flex items-center flex-shrink-0 text-[#FF6B00] mr-6">
+        <h1 class="text-xl font-semibold">Abdul Raheem</h1>
+      </div>
+    
+      <!-- Hamburger Icon -->
+      <div class="block md:hidden">
+        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-[#FF6B00] border-[#FF6B00] hover:text-orange-500 hover:border-orange-500">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20">
+            <path d="M0 3h20v2H0zM0 9h20v2H0zM0 15h20v2H0z"/>
+          </svg>
+        </button>
+      </div>
+    
+      <!-- Menu Links -->
+      <div id="nav-menu" class="w-full block flex-grow md:flex md:items-center md:w-auto hidden md:block">
+        <ul class="text-sm md:flex-grow md:flex md:justify-end md:items-center gap-6">
+          <li><a href="#home" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">Home</a></li>
+          <li><a href="#about" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">About</a></li>
+          <li><a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">Skills</a></li>
+          <li><a href="#projects" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">Projects</a></li>
+          <li><a href="#contact" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  <!-- 1st Section -->
+  <section id="home" class="flex flex-col justify-center items-center h-screen text-center px-4">
+     <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left opacity-0 animate-fade-in">
+        <img src="Assets/Raheem-portfolio.jpg" alt="Abdul Raheem" class="w-32 h-32 rounded-full object-cover border-4 border-[#FF6B00] transform hover:scale-105 transition duration-300">
+        <!-- Text -->
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Abdul Raheem</h1>
+          <p class="text-lg mb-6">BS Software Engineering student passionate about web and app development.</p>
+          <a href="#contact" class="inline-block bg-[#FF6B00] text-[#0E0E0E] px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Contact Me</a>
+        </div>
+    </div>
+      
+    </section>
+
+  <!-- About Section -->
+    <section id="about" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 animate-fade-in-up">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-6">About Me</h2>
+        <p class="text-lg leading-relaxed">
+          Hello! I’m Abdul Raheem, a BS Software Engineering student with a passion for web and app development. I enjoy turning ideas into real digital solutions that are user-friendly and impactful. Currently, I’m focusing on building my skills in front-end and back-end development, while exploring modern frameworks to create advanced and responsive websites and applications. I believe in continuous learning and love working on practical projects to enhance my experience. My goal is to become a full-stack developer and help businesses grow through technology.
+        </p>
+      </div>
+    </section>
+        <!-- Skills Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-10">Skills</h2>
+      
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <!-- Skill Card Example -->
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Programming</h3>
+            <ul class="space-y-1">
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>HTML & CSS</li>
+            </ul>
+          </div>
+        
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Frameworks</h3>
+            <ul class="space-y-1">
+              <li>Django</li>
+              <li>JavaFX</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Databases</h3>
+            <ul class="space-y-1">
+              <li>SQLite</li>
+              <li>MySQL (basic)</li>
+            </ul>
+          </div>
+        
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Tools & Technologies</h3>
+            <ul class="space-y-1">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Eclipse</li>
+              <li>IntelliJ IDEA</li>
+              <li>DB Browser for SQLite</li>
+            </ul>
+          </div>
+        
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Other</h3>
+            <ul class="space-y-1">
+              <li>Responsive Web Design</li>
+              <li>Problem Solving</li>
+              <li>OOP</li>
+              <li>UI/UX Basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] text-center mb-10">Projects</h2>
+    
+        <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-[#1A1A1A] rounded-lg p-6 shadow hover:scale-105 transition-transform duration-300">
+          <!-- Project 1: Mobile Bio Lab -->
+          <div class="bg-[#1A1A1A] rounded-lg shadow-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3 text-[#FF6B00]">Mobile Bio Lab Web Application</h3>
+              <p class="mb-4">
+                Developed a web application for managing lab operations, including patient management, lab tests, technician and receptionist functionalities, and doctor feedback.
+              </p>
+              <ul class="text-sm mb-4">
+                <li>✔️ User authentication & role-based dashboards</li>
+                <li>✔️ Patient and lab test management</li>
+                <li>✔️ Doctor feedback system</li>
+                <li>✔️ Clean UI with responsive design</li>
+              </ul>
+              <p class="text-sm"><span class="font-semibold">Technologies:</span> Python, Django, HTML, CSS, JavaScript, SQLite</p>
+            </div>
+          </div>
+          </div>
+          <div class="bg-[#1A1A1A] rounded-lg p-6 shadow hover:scale-105 transition-transform duration-300">
+          <!-- Project 2: Task Management System -->
+          <div class="bg-[#1A1A1A] rounded-lg shadow-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3 text-[#FF6B00]">Task Management System</h3>
+              <p class="mb-4">
+                Created a task management system as a university project to manage daily tasks efficiently. Users can add, update, and delete tasks with a simple and intuitive interface.
+              </p>
+              <ul class="text-sm mb-4">
+                <li>✔️ CRUD operations for tasks</li>
+                <li>✔️ User-friendly dashboard</li>
+                <li>✔️ Local storage data management</li>
+              </ul>
+              <p class="text-sm"><span class="font-semibold">Technologies:</span> Java, JavaFX, SQLite</p>
+            </div>
+          </div>
+          </div>
+          <div class="bg-[#1A1A1A] rounded-lg p-6 shadow hover:scale-105 transition-transform duration-300">
+  <!-- Project: Personal Portfolio Website -->
+  <div class="bg-[#1A1A1A] rounded-lg shadow-lg overflow-hidden">
+    <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3 text-[#FF6B00]">Personal Portfolio Website</h3>
+              <p class="mb-4">
+                Designed and developed my personal portfolio website to showcase my projects, skills, and contact information. Implemented responsive design, animations, and a contact form.
+              </p>
+              <ul class="text-sm mb-4">
+                <li>✔️ Fully responsive design</li>
+                <li>✔️ Modern UI with Tailwind CSS</li>
+                <li>✔️ Integrated animations and contact form</li>
+              </ul>
+              <p class="text-sm"><span class="font-semibold">Technologies:</span> HTML, Tailwind CSS, JavaScript</p>
+              <div class="mt-4">
+                <a href="https://raheem0281.github.io/portfolio-site/" target="_blank" class="text-[#FF6B00] hover:underline">Live Demo</a>
+                <span class="mx-2">|</span>
+                <a href="https://github.com/Raheem0281/portfolio-site" target="_blank" class="text-[#FF6B00] hover:underline">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form Section -->
+  <section id="contact-form" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656] animate-fade-in-up">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-10 text-center">Contact Form</h2>
+      <form action="https://formspree.io/f/xkgzwrdb" method="POST" class="space-y-6">
+        <div>
+          <label for="name" class="block mb-2 font-semibold">Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded bg-[#1A1A1A] border border-[#565656] focus:outline-none focus:border-[#FF6B00]">
+        </div>
+        <div>
+          <label for="phone" class="block mb-2 font-semibold">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 rounded bg-[#1A1A1A] border border-[#565656] focus:outline-none focus:border-[#FF6B00]">
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded bg-[#1A1A1A] border border-[#565656] focus:outline-none focus:border-[#FF6B00]">
+        </div>
+        <div>
+          <label for="description" class="block mb-2 font-semibold">Description</label>
+          <textarea id="description" name="description" rows="4" required class="w-full px-4 py-2 rounded bg-[#1A1A1A] border border-[#565656] focus:outline-none focus:border-[#FF6B00]"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-[#FF6B00] text-[#0E0E0E] px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Submit</button>
+        </div>
+        <input type="hidden" name="_redirect" value="https://yourwebsite.com/thankyou.html">
+      </form>
+    </div>
+  </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656] animate-fade-in-up">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-10">Contact Me</h2>
+
+        <div class="space-y-6 text-lg">
+
+          <!-- WhatsApp -->
+          <p>
+            📱 <span class="font-semibold">WhatsApp:</span> 
+            <a href="https://wa.me/923058437103" target="_blank" class="text-[#FF6B00] hover:underline">
+              0305-8437103
+            </a>
+          </p>
+
+          <!-- LinkedIn -->
+          <p>
+            💼 <span class="font-semibold">LinkedIn:</span> 
+            <a href="https://www.linkedin.com/in/abdul-raheem-499b50266" target="_blank" class="text-[#FF6B00] hover:underline">
+              View Profile
+            </a>
+          </p>
+
+          <!-- Email -->
+          <p>
+            ✉️ <span class="font-semibold">Email:</span> 
+            <a href="mailto:raheem0281@gmail.com" class="text-[#FF6B00] hover:underline">
+              raheem0281@gmail.com
+            </a>
+          </p>
+
+          <!-- Location -->
+          <p>
+            📍 <span class="font-semibold">Location:</span> Chowk Azam, Pakistan
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#0E0E0E] text-[#EAEAEA] text-center px-4 py-6 border-t border-[#565656]">
+      <p class="text-sm">
+        &copy; 2025 Abdul Raheem. All rights reserved.
+      </p>
+    </footer>
+    
+    <script>
+      const navToggle = document.getElementById('nav-toggle');
+      const navMenu = document.getElementById('nav-menu');
+    
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+      });
+    </script>
+</body>
+</html>
