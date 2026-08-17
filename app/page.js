@@ -128,9 +128,63 @@ const projects = [
       "A command-line text adventure game focused on programming logic, user interaction, decision making and object-oriented programming concepts.",
     tech: ["Java", "OOP", "Problem Solving"],
   },
+
+  {
+    title: "Weather App",
+    status: "Live",
+    icon: FlaskConical,
+    description:
+      "A responsive weather application built with HTML, CSS and JavaScript to provide a clean and user-friendly weather experience.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://weather-app-brown-ten-21.vercel.app/",
+  },
+  {
+    title: "Drag & Drop Image Uploader",
+    status: "Live",
+    icon: Code2,
+    description:
+      "A frontend image uploader with drag-and-drop functionality, built using HTML, CSS and JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://drag-drop-uploader.vercel.app/",
+  },
+  {
+    title: "Multi-Step Form",
+    status: "Live",
+    icon: Layers,
+    description:
+      "A multi-step form interface developed with HTML, CSS and JavaScript, providing a structured and interactive form experience.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://multi-step-form-gold-eight.vercel.app/",
+  },
+  {
+    title: "Real-Time Chat App",
+    status: "Live",
+    icon: Code2,
+    description:
+      "A real-time chat application frontend built using HTML, CSS and JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://real-time-chat-iota-mauve.vercel.app/",
+  },
+  {
+    title: "Frontend Best Practices Website",
+    status: "Live",
+    icon: Sparkles,
+    description:
+      "A frontend development website built using HTML, CSS and JavaScript, focused on frontend best practices.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://frontend-best-practices.vercel.app/",
+  },
 ];
 
-const navItems = ["home", "about", "skills", "projects", "certifications", "contact"];
+const navItems = [
+  "home",
+  "about",
+  "experience",
+  "skills",
+  "projects",
+  "certifications",
+  "contact",
+];
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -283,6 +337,69 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== EXPERIENCE ===== */}
+      <section
+        id="experience"
+        className="scroll-mt-24 border-y border-white/10 bg-white/[0.03]"
+      >
+        <div className="max-w-6xl mx-auto px-5 py-20">
+          <h2 className="text-3xl md:text-4xl font-black">Experience</h2>
+          <p className="mt-4 text-slate-300">
+            Internship and professional development experience.
+          </p>
+          <div className="mt-10 space-y-6">
+            {/* Fusion Tech */}
+            <div className="rounded-3xl bg-white/5 border border-white/10 p-7 hover:-translate-y-2 hover:border-blue-400/60 transition-all duration-300">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-5">
+                <div>
+                  <p className="text-blue-400 font-bold">
+                    May 2024 – July 2025
+                  </p>
+                  <h3 className="text-2xl font-black mt-2">
+                    Web Development Intern
+                  </h3>
+                  <p className="text-slate-300 mt-2 font-semibold">
+                    Fusion Tech, Layyah
+                  </p>
+                  <ul className="mt-5 space-y-3 text-slate-300 leading-7 list-disc list-inside">
+                    <li>
+                      Built and styled responsive web page layouts using HTML and CSS
+                      as part of front-end development tasks.
+                    </li>
+                    <li>
+                      Collaborated with the development team to implement
+                      structured, cross-browser-compatible page designs.
+                    </li>
+                  </ul>
+                </div>
+                <span className="text-xs font-black px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-400/20 w-fit">
+                  Internship
+                </span>
+              </div>
+            </div>
+            {/* Internee.pk */}
+            <div className="rounded-3xl bg-white/5 border border-white/10 p-7 hover:-translate-y-2 hover:border-blue-400/60 transition-all duration-300">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-5">
+                <div>
+                  <p className="text-blue-400 font-bold">
+                    2-Month Virtual Internship
+                  </p>
+                  <h3 className="text-2xl font-black mt-2">
+                    HTML CSS JS Internship Intern
+                  </h3>
+                  <p className="text-slate-300 mt-2 font-semibold">
+                    Internee.pk
+                  </p>
+                </div>
+                <span className="text-xs font-black px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-400/20 w-fit">
+                  Internship
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SKILLS ===== */}
       <section id="skills" className="scroll-mt-24 max-w-6xl mx-auto px-5 py-20">
         <h2 className="text-3xl md:text-4xl font-black">Skills</h2>
@@ -405,6 +522,10 @@ export default function Home() {
               {
                 title: "Graphic Design",
                 organization: "DigiSkills",
+              },
+              {
+                title: "HTML CSS JS Internship Certificate",
+                organization: "Internee.pk",
               },
             ].map((cert) => (
               <div
